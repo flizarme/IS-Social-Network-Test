@@ -1,0 +1,80 @@
+#main {
+   
+    margin: 0px;
+    padding: 0px;
+    display: -webkit-flex;
+    display:         flex;
+    -webkit-flex-flow: row;
+            flex-flow: row;
+}
+
+.social-network-container {
+    margin: 5px 40px;
+    padding: 10px ;
+    color: white;
+    -webkit-flex: 1 0 0;
+            flex: 1 0 0;
+}
+
+#twitter-logo {
+    background: url('../images/social_sprite.png') no-repeat -33px -37px;
+    width: 58px;
+    height: 47px;
+}
+
+#facebook-logo {
+    background: url('../images/social_sprite.png') no-repeat -150px -30px;
+    width: 60px;
+    height: 60px;
+}
+
+#instagram-logo {
+    width: 62px;
+    height: 60px;
+    background: url('../images/social_sprite.png') no-repeat -270px -30px;
+}
+
+#facebook-container {
+    background-color: rgb(8,68,164);
+}
+
+#twitter-container {
+    background-color: rgb(61,138,247);
+}
+
+#instagram-container {
+    background-color: rgb(123,72,18);
+}
+
+header {
+   
+    min-height: 100px;]
+}
+
+.img-logo {
+    height: 80;
+    width: 80px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Too narrow to support three columns */
+@media all and (max-width: 640px) {
+
+    #main {
+        min-height: 700px;
+        -webkit-flex-flow: column;
+                flex-direction: column;
+    }
+
+    .social-network-container {
+        margin: 5px 20px;
+    }
+
+    header {
+        min-height: 50px;
+        max-height: 50px;
+    }
+}
